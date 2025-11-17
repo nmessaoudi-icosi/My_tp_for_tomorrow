@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnement virtuel
+venv/
+env/
+.venv/
+.env/
+
+# Fichiers de configuration de l'IDE (par exemple VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Fichiers de configuration spécifiques à l'éditeur (ex : emacs, vim)
+*~
+*.swp
+
+# Logs
+*.log
+
+# Fichiers temporaires de Python (bytecode, etc.)
+*.pyo
+*.pyd
+
+# Cache de compilation
+*.egg-info/
+dist/
+build/
+
+# Fichiers spécifiques à certaines bibliothèques de Python
+*.egg
+
+# Tests de coverage
+.coverage
+*.coveragerc
+
+# Pytest
+.cache/
+
+# fichiers de test générés par pytest
+nosetests.xml
+coverage.xml
+*.cover
+
+# Fichiers créés lors de l'utilisation de flake8
+.flake8
+
+# Fichiers spécifiques à Jupyter Notebook
+.ipynb_checkpoints/
+
+# Fichiers de configuration de Docker (si utilisés)
+.docker/
+
+# Configuration de pipenv
+Pipfile.lock
