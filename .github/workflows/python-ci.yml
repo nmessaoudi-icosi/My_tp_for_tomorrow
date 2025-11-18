@@ -1,22 +1,8 @@
-name: Python CI
-
-on:
-  push:
-    branches:
-      - main
-      - feature/*
-  pull_request:
-    branches:
-      - main
-
 jobs:
   test:
-    runs-on: ubuntu-latest
-
     strategy:
       matrix:
         python-version: ["3.9", "3.10", "3.11"]
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -36,7 +22,5 @@ jobs:
         run: |
           pip show pytest  # Cette commande vérifiera si pytest est installé
 
-   
       - name: Run tests with coverage
-        run: |
-          pytest --cov=. --cov-report=term-missing
+        run: pytest --cov=. --cov-report=term-missing
