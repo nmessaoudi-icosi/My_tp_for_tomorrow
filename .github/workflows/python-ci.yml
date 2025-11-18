@@ -31,6 +31,11 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 	  pip install pytest
+
+      - name: Verify pytest installation
+        run: |
+          pip show pytest  # Cette commande vérifiera si pytest est installé
+
    
       - name: Run tests with coverage
         run: |
